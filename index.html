@@ -1,1 +1,23 @@
 
+<html>
+
+<body>
+
+<input type="text" id="urlOne">https://source.unsplash.com/random/?</input>
+<input type="text" id="urlTwo"></input>
+<button onclick="open()" id="btn"></button>
+</body>
+
+<script>
+
+var one = getElementById("urlOne").value;
+var two = getElementById("urlTwo").value;
+
+
+function open(){
+window.open(one + two);
+}
+
+</script>
+
+</html>
