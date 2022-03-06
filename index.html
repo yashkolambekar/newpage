@@ -1,3 +1,8 @@
+<body>
 <input type="text" id="one" value="https://source.unsplash.com/random/?"></input>
 <input type="text" id="two"></input>
-<button onclick="function(){window.open( '' + document.getElementById('one').value + document.getElementById('two').value }" >Open</button>
+<button onclick="open()">Open</button>
+</body>
+<script>
+function open(){window.open( '' + document.getElementById('one').value + document.getElementById('two').value }
+</script>
