@@ -1,8 +1,12 @@
 <body>
-<input type="text" id="one" value="https://source.unsplash.com/random/?"></input>
-<input type="text" id="two"></input>
-<button onclick="open()">Open</button>
+<input oninput="update()" type="text" id="one" value="https://source.unsplash.com/random/?"></input>
+<input oninput="update()" type="text" id="two"></input>
+<a id="link" target="_blank">
+<button>Open</button>
+</a>
 </body>
 <script>
-function open(){window.open(`${document.getElementById('one').value}${document.getElementById('two').value}`, "_blank"}
+function update(){
+document.getElementById("link").href = `${document.getElementById("one").value}${document.getElementById("two").value}`;
+}
 </script>
