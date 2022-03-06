@@ -10,12 +10,14 @@
 
 <script>
 
-var one = getElementById("urlOne").value;
-var two = getElementById("urlTwo").value;
+var one = getElementById("urlOne");
+var two = getElementById("urlTwo");
+
+var url = "" + one.value + two.value;
 
 
 function open(){
-window.open(`${one}${two}`);
+window.open(url);
 }
 
 </script>
